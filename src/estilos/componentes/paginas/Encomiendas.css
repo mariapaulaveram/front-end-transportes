@@ -1,0 +1,44 @@
+.tituloEncomiendas{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(81, 80, 80);
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+   
+}
+.foto_caja{
+    width: 48%;
+ }
+ .encomiendasCaja p{
+    width: 48%;
+ }
+
+  .encomiendasCaja{
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 13px 0;
+     display: flex;
+     justify-content: space-between;
+     text-align:left;
+ } 
+
+
+
+ @media screen and (min-width:100px) and (max-width :800px) {
+   .holder{
+    width:100%,
+   }
+  
+   .navTop ul li a{
+    font-stretch: ultra-condensed;
+    font-size:x-small;
+}
+   .encomiendasCaja{
+    display: block;
+   }
+   .foto_caja, .encomiendasCaja p{
+    width: 100%;
+ }
+
+   } 

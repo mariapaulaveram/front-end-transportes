@@ -1,0 +1,60 @@
+.tituloHistoria{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(81, 80, 80);
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+.historias{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.historia{
+    width: 48%;
+    text-align: center;
+    padding: 8px;
+    margin: 9px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    
+}
+.historia img{
+   
+    max-width: 100%;
+    
+}
+.reseñaHistorica{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+}
+.historiasTexto{
+ 
+    text-align: left;
+    padding-left: 2rem;
+    margin: 16px 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    color:rgb(81, 80, 80);
+    
+}
+@media screen and (min-width:100px) and (max-width :800px) {
+   
+    .reseñaHistorica{
+     display: block;
+     margin-right: 20px;
+    }
+     .historia{
+     width: 100%;
+    } 
+    .tituloHistoria{
+     text-align: center;
+    }
+    .ignorar{
+        display: none;
+    }
+ 
+    } 

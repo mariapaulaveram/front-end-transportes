@@ -1,0 +1,108 @@
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+}
+
+ul.social-icons {
+    justify-content: center;
+}
+
+ul li {
+    flex-grow: 0.02;
+}
+
+.social-icons a {
+    color: #373535;
+    border-radius: 50%;
+    background-color: rgb(159, 156, 156);
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.social-icons a:hover {
+    color: #faf9f9;
+  
+}
+.redes {
+    padding-bottom: 0.5rem;
+}
+
+.datos-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;;
+}
+
+.datos-footer ul li {
+    list-style: none;
+    padding-top: 0.5rem;
+}
+
+.footer-abajo {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    background-color: rgb(159, 156, 156);
+    margin-bottom: 0%;
+    text-align: center;
+}
+.datoUno, .datoDos, .datoTres{
+    width: 30%;
+}
+.datoUno ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+.datoDos ul a{
+    text-decoration: none;
+    color: #333;
+}
+.datoDos ul a:hover{
+    font-weight: bold;
+}
+.datoDos ul li{
+   padding-left: 6rem;
+}
+
+.datoDos ul li:nth-child(1){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.datoTres ul li{
+    padding-top: 3rem;
+ }
+
+.styles-module_avatar__afcc4 img{
+    display: none;
+}
+.styles-module_avatar__afcc4::after{
+    display: none;
+}
+
+
+
+@media screen and (min-width:100px) and (max-width :800px) {
+
+    .datos-footer {
+        display: block;
+    }
+
+    .datoUno,
+    .datoDos,
+    .datoTres {
+        width: 98%;
+    }
+
+    .datoDos ul li {
+        padding-left: 0;
+    }
+}

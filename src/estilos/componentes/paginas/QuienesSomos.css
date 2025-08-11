@@ -1,0 +1,120 @@
+.izq{
+    display: flex;
+    justify-content: space-around;
+}
+.der{
+    width: 80%;
+}
+.tituloQuienesSomos {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(81, 80, 80);
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.foto_personas {
+    width: 100%;
+}
+
+.quienesSomos {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quienes {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 47%;
+    padding: 10px;
+    margin: 13px 0;
+    display: block;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.navQuienes {
+    height:15%;
+    background-color: #1f8c1f;
+    /* border: 1px solid #2c2b2b; */
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.navQuienes ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navQuienes ul li {
+    list-style: none;
+    border-bottom: 1px solid white;
+    flex-grow: 1;
+}
+
+.navQuienes li:last-child {
+    border-bottom: none;
+}
+
+.navQuienes ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px ;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    transition-duration: 2s;
+    font-size: small;
+}
+
+.navQuienes ul li a:hover {
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    /* background-color: #ccc; */
+}
+
+.navQuienes ul li a.activo {
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+}
+
+@media screen and (min-width:100px) and (max-width :800px) {
+    .izq {
+        display: block;
+
+    }
+    .der{
+       margin-left: 3rem;
+    }
+
+    .navQuienes {
+        width: 100%;
+        padding: 0.4rem 0 0.4rem 0;
+       
+    }
+
+    .navQuienes ul {
+        display: flex; 
+    }
+
+    .navQuienes ul li {
+        border-bottom: none;
+    }
+    .navQuienes ul li a{
+        text-align: center;
+    }
+
+    .quienesSomos {
+        display: block;
+    }
+
+    .quienes {
+        width: 100%;
+    }
+
+
+}

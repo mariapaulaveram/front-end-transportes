@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex; 
+  justify-content: space-between;
+  align-items:center;
+  flex-grow: 1;
+  margin-right: auto;
+}
+
+.img_logo {
+  height: 60px;
+  width: auto;
+}
+
+.telefono {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgb(81, 80, 80);
+}
+
+
