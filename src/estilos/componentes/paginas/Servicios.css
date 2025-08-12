@@ -23,10 +23,10 @@
     margin: 16px 0;
     box-sizing: border-box;
     justify-content: space-around;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 5px rgba(226, 222, 222, 0.9); 
 }
 .servicio:hover{
-    box-shadow: 0 0 5px rgba(101, 9, 9, 0.934); 
+    box-shadow: 0 0 5px rgba(56, 170, 60, 0.934); 
 }
 .servicio img{
     border-radius: 5px;

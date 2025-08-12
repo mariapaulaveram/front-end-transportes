@@ -1,6 +1,6 @@
 .contacto_directo {
     color: rgb(81, 80, 80);
-    background-color: #f0eeeea7;
+    background-color: #f8f2f290;
     padding: 3px;
     padding-left: 20px;
 }
@@ -72,9 +72,9 @@
 .formulario p input,
 .formulario p textarea {
     width: 90%;
-    background: #f0eeeea7;
-    border-radius: 5px;
-    border: 1px solid #8a8787;
+    background: #f8f2f290;
+    border-radius: 3px;
+    border: 1px solid #cecece;
     font-size: 14px;
     padding: 6px 10px;
 }
@@ -103,7 +103,7 @@
 }
 
 .formulario input[type="submit"] {
-    background: #e6e4e3;
+    background: #1f8c1f;
     border: none;
     border-radius: 30px;
     color: white;
@@ -121,7 +121,7 @@
 }
 
 .formulario input[type="submit"]:hover {
-    background-color: #38a138;
+    background-color: #e82424;
     /*cambia de color cuando pasa la manito*/
 }
 
