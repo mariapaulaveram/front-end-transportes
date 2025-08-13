@@ -1,5 +1,7 @@
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,17 +27,19 @@ import PagoReembolso from './paginas/PagoReembolso';
 import ServiciosAMedida from './paginas/ServiciosAMedida';
 import Congelados from './paginas/Congelados';
 
+
 function App() {
   return (
     <div className="App">
-     <Header/>
+     
 
      <BrowserRouter>
+     <Header/>
      <Nav/>
     
      <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="nosotros" element={<Nosotros/>} />
+    <Route path="nosotros" element= {<Nosotros/>} />
     <Route path="novedades" element={<Novedades/>} />
     <Route path="contacto" element={<Contacto/>} />
     <Route path="servicios" element={<Servicios/>} />

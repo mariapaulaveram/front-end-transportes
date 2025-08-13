@@ -35,3 +35,45 @@ nav ul li a.activo {
     color:rgb(11, 11, 11);
     font-weight: bold;
 }
+
+/* 🔹 Quitar flecha del toggle */
+.sin-flecha::after {
+  display: none !important;
+}
+
+.texto-blanco {
+  color: white !important;
+  font-size:small ;
+}
+
+/* 🔹 Menú desplegable sin bordes redondeados */
+.dropdown-menu,
+.menu-nosotros {
+  border-radius: 0 !important;
+  /*border: none !important;*/
+  border: 1px solid rgb(221, 219, 219) !important;
+  box-shadow: none !important;
+  padding: 15px 10px;
+  background-color: #f8f9fa;
+}
+
+.dropdown-item{
+  padding-bottom: 8px;
+  background-color: transparent !important;
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: transparent !important;
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+
+#dropdown-nosotros {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }

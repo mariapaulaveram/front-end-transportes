@@ -1,13 +1,14 @@
 import '../estilos/componentes/paginas/Home.css';
 import React from "react";
-
+import  HomeCarousel from '../componentes/HomeCarousel.js'
 
 const Home = (props)=> {
     return (
         <div className="holder">
-            <div className="homeimg">
+            {/*<div className="homeimg">
                 <img className="foto_inicio" src="images/home/home.jpg"  alt="Carga"/>
-            </div>
+            </div> */}
+            <HomeCarousel />
             <div className="columnas">
                 <div className="columna uno">
                     <h2>Personas </h2>

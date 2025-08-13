@@ -23,10 +23,11 @@
 .foto_inicio{
     width: 100%;
 }
-.homeimg{
+/*.homeimg{
    display: flex;
    justify-content: center;
-}
+}*/
+
 @media screen and (min-width:100px) and (max-width :800px) {
    
     .holder{
