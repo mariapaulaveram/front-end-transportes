@@ -31,14 +31,23 @@ ul li {
     color: #faf9f9;
   
 }
+
+nav ul li a,
+.dropdown-item,
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+
 .redes {
     padding-bottom: 0.5rem;
 }
 
 .datos-footer {
     display: flex;
-    justify-content: center;
-    padding-top: 0.5rem;;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem 0;
 }
 
 .datos-footer ul li {

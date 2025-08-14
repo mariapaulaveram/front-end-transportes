@@ -5,20 +5,51 @@
     padding-left: 20px;
 }
 
-.contacto {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 24px;
-    color: rgb(81, 80, 80);
+.contacto-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+
+.columna {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  min-width: 250px;
+}
+
+.columna li {
+  margin-bottom: 12px;
+}
+
+.columna a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.columna a:hover {
+  color: #2e7d32;
+}
+
+.icono {
+  font-size: 18px;
+  color: #2e7d32;
+}
+
 
 .casaCentral {
     color: rgb(81, 80, 80);
 }
 
-.casaCentral h2 {
-    padding-left: 10px;
+.datos h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .contacto div {
@@ -26,14 +57,18 @@
 }
 
 .icono {
-    color: #1f8c1f;
+    color: #2e7d32;
 }
 
 .form,
 .datos {
-    width: 50%;
     padding: 10px;
 }
+
+.form p{
+    padding-left: 100px;
+}
+
 
 .datos h2 {
     padding-left: 40px;
@@ -55,9 +90,20 @@
     font-weight: 100;
 }
 
+.formulario {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 80%;
+  margin: auto;
+}
+
+
 .formulario p {
-    display: flex;
-    /*pone a lo largo, uno al lado del otro*/
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario p label {
@@ -72,9 +118,10 @@
 .formulario p input,
 .formulario p textarea {
     width: 90%;
-    background: #f8f2f290;
-    border-radius: 3px;
-    border: 1px solid #cecece;
+    height: 45px;
+    background: #fbfafa90;
+    border-radius: 2px;
+    border: 1px solid #989797;
     font-size: 14px;
     padding: 6px 10px;
 }
@@ -96,20 +143,20 @@
     /*cambia la posicion del 4to p*/
 }
 
-.formulario textarea {
+.formulario P textarea {
     resize: none;
     /*deja fijo el tamaño del area*/
-    height: 150px;
+    height: 200px;
 }
 
 .formulario input[type="submit"] {
-    background: #1f8c1f;
+    background: #2e7d32;
     border: none;
     border-radius: 30px;
     color: white;
     font-size: 16px;
     padding: 6px 20px;
-    width: auto;
+    width: 100px;
     /*ancho del boton*/
     position: relative;
     /*posicion del boton*/
@@ -118,11 +165,18 @@
     cursor: pointer;
     /*aparece la manito*/
     transition-duration: 1s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .formulario input[type="submit"]:hover {
     background-color: #e82424;
     /*cambia de color cuando pasa la manito*/
+}
+
+.contacto,
+.formulario,
+.datos {
+  font-family: 'Inter', sans-serif;
 }
 
 @media screen and (min-width:100px) and (max-width :800px) {

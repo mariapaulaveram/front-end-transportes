@@ -26,7 +26,7 @@ const Contacto = (props) => {
     setMsg("");
     setSending(true);
     const response = await axios.post(
-        "http://localhost:3000/api/contacto",         
+      "http://localhost:3000/api/contacto",
       formData
     );
     setSending(false);
@@ -39,7 +39,7 @@ const Contacto = (props) => {
   return (
     <div className="holder">
       <div className="contacto_directo">
-        <h2>CONTACTO DIRECTO</h2>
+        <h2>ATENCION AL CLIENTE</h2>
         <p>
           Puede contactarse con nosotros vía telefónica o por mail a cualquiera
           de nuestras sucursales o por nuestro formulario web.
@@ -47,7 +47,7 @@ const Contacto = (props) => {
       </div>
       <div className="contacto">
         <div className="form">
-          <h2>En qué podemos ayudarte?</h2>
+          <p>Dejanos tu consulta, responderemos a la brevedad.</p>
           <form
             action="/contacto"
             method="post"
@@ -98,33 +98,52 @@ const Contacto = (props) => {
           </form>
         </div>
 
-        <div class="datos">
-          <h2>Casa Central</h2>
-          <ul>
-            <li>
-              <i className="fa-solid fa-phone icono"></i> (011)442-43355
-            </li>
-            <li>
-              <i className="fa-solid fa-phone icono "></i> (011)44243356
-            </li>
-            <li>
-              <i className="fa-solid fa-phone icono"></i> (011)44242357
-            </li>
-            <li>
-              <i className="fa-solid fa-phone icono"></i> (011)44243358
-            </li>
-            <li>
-              <i className="fa-solid fa-envelope icono"></i>{" "}
-              contacto@cargo_expres.com.ar
-            </li>
-            <li>
-              <i className="fa-brands fa-whatsapp icono"></i> 1145982563
-            </li>
-            <li>
-              <i className="fa-brands fa-instagram icono"></i> cargo_expres
-            </li>
-          </ul>
+        <div className="datos">
+          <h4>Casa Central</h4>
+          <div className="contacto-columns">
+            <ul className="columna">
+              <li>
+                <a href="tel:01144243355">
+                  <i className="fa-solid fa-phone icono"></i> (011) 4424-3355
+                </a>
+              </li>
+              <li>
+                <a href="tel:01144243356">
+                  <i className="fa-solid fa-phone icono"></i> (011) 4424-3356
+                </a>
+              </li>
+              <li>
+                <a href="tel:01144242357">
+                  <i className="fa-solid fa-phone icono"></i> (011) 4424-2357
+                </a>
+              </li>
+              <li>
+                <a href="tel:01144243358">
+                  <i className="fa-solid fa-phone icono"></i> (011) 4424-3358
+                </a>
+              </li>
+            </ul>
+
+            <ul className="columna">
+              <li>
+                <a href="mailto:contacto@cargo_expres.com.ar">
+                  <i className="fa-solid fa-envelope icono"></i> contacto@cargo_expres.com.ar
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/541145982563" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-whatsapp icono"></i> WhatsApp: 11 4598-2563
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/cargo_expres" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-instagram icono"></i> Instagram: @cargo_expres
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
       </div>
       <div className="casaCentral">
         <p>
